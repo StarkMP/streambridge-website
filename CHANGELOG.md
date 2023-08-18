@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Add meta tags
+
 ## 1.0.3
 
 - Lock development dependencies versions
