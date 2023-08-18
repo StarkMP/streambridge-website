@@ -1,9 +1,9 @@
 'use client';
 
-import { ChromeSVG, EdgeSVG, FirefoxSVG } from '@components/svg';
 import { chromeStoreUrl, copyrightYear } from '@constants';
 import { DownloadButton, Header } from '@features';
 import type { DownloadButtonProps } from '@typings/features/download-button';
+import { ChromeSVG, EdgeSVG, FirefoxSVG } from '@ui/svg';
 import type { JSX } from 'react';
 
 const downloadButtons: DownloadButtonProps[] = [

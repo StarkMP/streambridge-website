@@ -1,5 +1,5 @@
-import { Button } from '@components';
 import type { DownloadButtonProps } from '@typings/features/download-button';
+import { Button } from '@ui';
 import type { JSX } from 'react';
 
 export const DownloadButton = ({

@@ -1,7 +1,7 @@
 'use client';
 
-import { Button, Overlay } from '@components';
-import { CrossSVG } from '@components/svg';
+import { Button, Overlay } from '@ui';
+import { CrossSVG } from '@ui/svg';
 import { AnimatePresence, motion } from 'framer-motion';
 import { type JSX, type ReactNode, useState } from 'react';
 

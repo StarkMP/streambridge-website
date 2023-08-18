@@ -1,6 +1,6 @@
 'use client';
 
-import { Portal } from '@components';
+import { Portal } from '@ui';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { JSX } from 'react';
 

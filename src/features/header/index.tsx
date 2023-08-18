@@ -1,6 +1,6 @@
-import { Button } from '@components';
-import { DiscordSVG } from '@components/svg';
 import { contactUsUrl, discordUrl, donateUrl } from '@constants';
+import { Button } from '@ui';
+import { DiscordSVG } from '@ui/svg';
 import Image from 'next/image';
 import logo from 'public/assets/logo.svg';
 import { type JSX } from 'react';
