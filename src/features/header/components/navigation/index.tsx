@@ -72,7 +72,7 @@ const NavigationContent = ({ navigation, social }: HeaderNavigationProps): JSX.E
           href={item.url}
           target='_blank'
           rel='noreferrer'
-          className='w-[24px]'
+          className='w-6 h-6 text-gray transition-colors ease-in-out hover:text-smooth-white [&>svg]:w-full [&>svg]:h-full'
         >
           {item.icon}
         </Button>

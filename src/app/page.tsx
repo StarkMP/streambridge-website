@@ -2,24 +2,24 @@
 
 import { chromeStoreUrl, copyrightYear } from '@constants';
 import { DownloadButton, Header } from '@features';
-import type { DownloadButtonProps } from '@typings/features/download-button';
+import type { DownloadButtonParams } from '@typings/features/download-button';
 import { ChromeSVG, EdgeSVG, FirefoxSVG } from '@ui/svg';
 import type { JSX } from 'react';
 
-const downloadButtons: DownloadButtonProps[] = [
+const downloadButtons: DownloadButtonParams[] = [
   {
-    icon: <FirefoxSVG className='w-full h-full' />,
+    icon: <FirefoxSVG />,
     url: '#',
     children: 'Download for Firefox',
     disabled: true,
   },
   {
-    icon: <ChromeSVG className='w-full h-full' />,
+    icon: <ChromeSVG />,
     url: chromeStoreUrl,
     children: 'Download for Chrome',
   },
   {
-    icon: <EdgeSVG className='w-full h-full' />,
+    icon: <EdgeSVG />,
     url: chromeStoreUrl,
     children: 'Download for Edge',
   },

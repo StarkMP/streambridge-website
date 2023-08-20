@@ -1,6 +1,8 @@
-import type { DownloadButtonProps } from '@typings/features/download-button';
+import type { DownloadButtonParams } from '@typings/features/download-button';
 import { Button } from '@ui';
 import type { JSX } from 'react';
+
+type DownloadButtonProps = DownloadButtonParams;
 
 export const DownloadButton = ({
   children,
@@ -16,7 +18,9 @@ export const DownloadButton = ({
       href={url}
       target='_blank'
     >
-      <span className='flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5'>{icon}</span>{' '}
+      <span className='flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 [&>svg]:w-full [&>svg]:h-full'>
+        {icon}
+      </span>{' '}
       {children}
     </Button>
   );

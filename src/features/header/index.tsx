@@ -15,9 +15,7 @@ const navigation = [
 
 const social = [
   {
-    icon: (
-      <DiscordSVG className='w-full h-full text-gray transition-colors ease-in-out hover:text-smooth-white' />
-    ),
+    icon: <DiscordSVG />,
     url: discordUrl,
   },
 ];

@@ -1,3 +1,9 @@
+## 1.0.7
+
+- Refactor `@ui/button` component
+- Refactor `@feature/download-button` types
+- Refactor icons styles
+
 ## 1.0.4
 
 - Add meta tags

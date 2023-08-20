@@ -57,10 +57,12 @@ export const Button = ({
     if (onClick) onClick(e);
   };
 
+  const modifiedClassName = `${disabled ? 'opacity-50 pointer-events-none ' : ''}${className}`;
+
   if (type === 'link') {
     return (
       <a
-        className={`${disabled ? 'opacity-50 pointer-events-none ' : ''}${className}`}
+        className={modifiedClassName}
         {...(other as LinkButtonProps)}
         onClick={handleClick as LinkButtonProps['onClick']}
       >
@@ -74,7 +76,7 @@ export const Button = ({
       {...(other as StandartButtonProps)}
       type={type}
       disabled={disabled}
-      className={`${disabled ? 'opacity-50 pointer-events-none ' : ''}${className}`}
+      className={modifiedClassName}
       onClick={handleClick as StandartButtonProps['onClick']}
     >
       {children}

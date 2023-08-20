@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-export type DownloadButtonProps = {
+export type DownloadButtonParams = {
   icon: ReactNode;
   url: string;
   disabled?: boolean;
