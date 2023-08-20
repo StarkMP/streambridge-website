@@ -32,8 +32,8 @@ npm run dev
 
 - [x] Run: `npm run format`
 - [x] Run: `npm run lint`
-- [x] Increase the version at **package.json**
-- [x] Add update notes to **CHANGELOG.md**
+- [x] Increase the version at `package.json`
+- [x] Add update notes to `CHANGELOG.md`
 
 #### Technology stack
 
@@ -43,7 +43,7 @@ npm run dev
 
 #### Versioning
 
-_[Major].[Minor].[Patch]_
+`Major`**.**`Minor`**.**`Patch`
 
 #### Commits naming pattern
 
