@@ -1,3 +1,7 @@
+## 1.0.8
+
+- Enable Firefox download button
+
 ## 1.0.7
 
 - Refactor `@ui/button` component

@@ -1,6 +1,6 @@
 'use client';
 
-import { chromeStoreUrl, copyrightYear } from '@constants';
+import { chromeStoreUrl, copyrightYear, firefoxAddonUrl } from '@constants';
 import { DownloadButton, Header } from '@features';
 import type { DownloadButtonParams } from '@typings/features/download-button';
 import { ChromeSVG, EdgeSVG, FirefoxSVG } from '@ui/svg';
@@ -9,9 +9,8 @@ import type { JSX } from 'react';
 const downloadButtons: DownloadButtonParams[] = [
   {
     icon: <FirefoxSVG />,
-    url: '#',
+    url: firefoxAddonUrl,
     children: 'Download for Firefox',
-    disabled: true,
   },
   {
     icon: <ChromeSVG />,
