@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: ReactNode }): JSX.Element => {
 
         <meta property='og:title' content='Stream Bridge - Watch all on Twitch' />
         <meta property='og:site_name' content='Stream Bridge' />
-        <meta property='og:url' content='https://streambridge.site' />
+        <meta property='og:url' content='https://www.streambridge.io' />
         <meta
           property='og:description'
           content='Watch streamers from other streaming platforms on Twitch with Stream Bridge browser extension! Watch YouTube, Kick, Trovo, WASD and VK Play Live on Twitch!'

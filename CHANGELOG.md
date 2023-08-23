@@ -1,3 +1,7 @@
+## 1.0.9
+
+- Update domain to www.streambridge.io
+
 ## 1.0.8
 
 - Enable Firefox download button
