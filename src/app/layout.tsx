@@ -36,6 +36,10 @@ const RootLayout = ({ children }: { children: ReactNode }): JSX.Element => {
         <meta name='robots' content='index, follow' />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='language' content='English'></meta>
+        <meta
+          name='google-site-verification'
+          content='NwrAPzYa0cEpW7u7xvcIdxfrHeUv4Y4njZj-6Rf3xQI'
+        ></meta>
       </head>
       <body className='bg-dark-gray overflow-hidden'>{children}</body>
     </html>
