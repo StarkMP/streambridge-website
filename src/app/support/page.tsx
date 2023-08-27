@@ -1,6 +1,6 @@
-import { supportUrl } from '@constants';
-import { NextPage } from 'next';
-import { redirect } from 'next/navigation';
+import { supportUrl } from "@constants";
+import { NextPage } from "next";
+import { redirect } from "next/navigation";
 
 const SupportPage: NextPage = () => {
   redirect(supportUrl);

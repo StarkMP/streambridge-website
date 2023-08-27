@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { isSSR } from '@utils/is-ssr';
-import { type ReactNode, type ReactPortal, useEffect, useState } from 'react';
-import { createPortal } from 'react-dom';
+import { isSSR } from "@utils/is-ssr";
+import { type ReactNode, type ReactPortal, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 type PortalProps = {
   children: ReactNode;

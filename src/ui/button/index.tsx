@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
-import type { AnalyticsOptions } from '@typings/analytics';
+import type { AnalyticsOptions } from "@typings/analytics";
+import Link, { type LinkProps } from "next/link";
 import type {
   AnchorHTMLAttributes,
   ButtonHTMLAttributes,
@@ -9,12 +10,13 @@ import type {
   MouseEvent,
   MouseEventHandler,
   ReactNode,
-} from 'react';
+} from "react";
 
 type CommonButtonProps = {
   children: ReactNode;
   analytics?: AnalyticsOptions;
   disabled?: boolean;
+  className?: string;
 };
 
 type StandartButtonProps = DetailedHTMLProps<
@@ -30,18 +32,24 @@ type LinkButtonProps = DetailedHTMLProps<
   HTMLAnchorElement
 > &
   CommonButtonProps & {
-    type: 'link';
+    type: "link";
     onClick?: MouseEventHandler<HTMLAnchorElement>;
   };
 
-type ButtonProps = StandartButtonProps | LinkButtonProps;
+type NextLinkButtonProps = LinkProps &
+  CommonButtonProps & {
+    type: "next-link";
+    onClick?: MouseEventHandler<HTMLAnchorElement>;
+  };
+
+type ButtonProps = StandartButtonProps | LinkButtonProps | NextLinkButtonProps;
 
 export const Button = ({
   type,
   children,
   analytics,
   disabled,
-  className = '',
+  className = "",
   onClick,
   ...other
 }: ButtonProps): JSX.Element => {
@@ -57,17 +65,29 @@ export const Button = ({
     if (onClick) onClick(e);
   };
 
-  const modifiedClassName = `${disabled ? 'opacity-50 pointer-events-none ' : ''}${className}`;
+  const modifiedClassName = `${disabled ? "opacity-50 pointer-events-none " : ""}${className}`;
 
-  if (type === 'link') {
+  if (type === "link") {
     return (
       <a
         className={modifiedClassName}
         {...(other as LinkButtonProps)}
-        onClick={handleClick as LinkButtonProps['onClick']}
+        onClick={handleClick as LinkButtonProps["onClick"]}
       >
         {children}
       </a>
+    );
+  }
+
+  if (type === "next-link") {
+    return (
+      <Link
+        className={modifiedClassName}
+        {...(other as NextLinkButtonProps)}
+        onClick={handleClick as NextLinkButtonProps["onClick"]}
+      >
+        {children}
+      </Link>
     );
   }
 
@@ -77,7 +97,7 @@ export const Button = ({
       type={type}
       disabled={disabled}
       className={modifiedClassName}
-      onClick={handleClick as StandartButtonProps['onClick']}
+      onClick={handleClick as StandartButtonProps["onClick"]}
     >
       {children}
     </button>

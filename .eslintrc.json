@@ -36,7 +36,7 @@
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/ban-types": 0,
     "@typescript-eslint/no-floating-promises": 0,
-    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-quotes": ["error", "prefer-double"],
     "react/jsx-fragments": ["error", "syntax"],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
@@ -49,7 +49,7 @@
     "newline-before-return": 2,
     "indent": 0,
     "linebreak-style": 0,
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double", { "avoidEscape": true }],
     "semi": ["error", "always"],
     "simple-import-sort/imports": "error"
   }

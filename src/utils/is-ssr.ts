@@ -1,1 +1,1 @@
-export const isSSR = (): boolean => typeof window !== 'object';
+export const isSSR = (): boolean => typeof window !== "object";

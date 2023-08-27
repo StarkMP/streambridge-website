@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,77 +14,31 @@
     "jsx": "preserve",
     "strict": true,
     "noEmit": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
+    "typeRoots": ["./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
-      "@api/*": [
-        "./src/api/*"
-      ],
-      "@api": [
-        "./src/api"
-      ],
-      "@ui/*": [
-        "./src/ui/*"
-      ],
-      "@ui": [
-        "./src/ui"
-      ],
-      "@providers/*": [
-        "./src/providers/*"
-      ],
-      "@providers": [
-        "./src/providers"
-      ],
-      "@features/*": [
-        "./src/features/*"
-      ],
-      "@features": [
-        "./src/features"
-      ],
-      "@hooks/*": [
-        "./src/hooks/*"
-      ],
-      "@hooks": [
-        "./src/hooks"
-      ],
-      "@utils/*": [
-        "./src/utils/*"
-      ],
-      "@utils": [
-        "./src/utils"
-      ],
-      "@typings": [
-        "./src/typings"
-      ],
-      "@typings/*": [
-        "./src/typings/*"
-      ],
-      "@store": [
-        "./src/store"
-      ],
-      "@store/*": [
-        "./src/store/*"
-      ],
-      "@translations": [
-        "./src/translations"
-      ],
-      "@translations/*": [
-        "./src/translations/*"
-      ],
-      "@app": [
-        "./src/app"
-      ],
-      "@app/*": [
-        "./src/app/*"
-      ],
-      "@package-json": [
-        "./package.json"
-      ],
-      "@constants": [
-        "./src/constants"
-      ]
+      "@api/*": ["./src/api/*"],
+      "@api": ["./src/api"],
+      "@ui/*": ["./src/ui/*"],
+      "@ui": ["./src/ui"],
+      "@providers/*": ["./src/providers/*"],
+      "@providers": ["./src/providers"],
+      "@features/*": ["./src/features/*"],
+      "@features": ["./src/features"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@hooks": ["./src/hooks"],
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils"],
+      "@typings": ["./src/typings"],
+      "@typings/*": ["./src/typings/*"],
+      "@store": ["./src/store"],
+      "@store/*": ["./src/store/*"],
+      "@translations": ["./src/translations"],
+      "@translations/*": ["./src/translations/*"],
+      "@app": ["./src/app"],
+      "@app/*": ["./src/app/*"],
+      "@package-json": ["./package.json"],
+      "@constants": ["./src/constants"]
     },
     "allowJs": true,
     "incremental": true,
@@ -98,11 +48,7 @@
       }
     ]
   },
-  "exclude": [
-    "node_modules",
-    "__tests__",
-    "dist"
-  ],
+  "exclude": ["node_modules", "__tests__", "dist"],
   "include": [
     "./src/**/*",
     "./src/**/*.json",
