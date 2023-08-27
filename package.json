@@ -1,6 +1,6 @@
 {
   "name": "@streambridge/website",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "scripts": {
     "typecheck": "tsc",
     "eslint": "eslint . --ext .ts,.tsx",
