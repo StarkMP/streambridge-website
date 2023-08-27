@@ -41,7 +41,7 @@ const RootLayout = ({ children }: { children: ReactNode }): JSX.Element => {
           content='8DwtAGTNUeCiyofsM0LRqof3PCBm6uH4jNlRJ1GdX8E'
         />
       </head>
-      <body className='bg-dark-gray overflow-hidden'>{children}</body>
+      <body className='bg-dark-gray'>{children}</body>
     </html>
   );
 };

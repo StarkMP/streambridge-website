@@ -1,4 +1,4 @@
-import { contactUsUrl, discordUrl, donateUrl } from '@constants';
+import { discordUrl, donateUrl, supportUrl } from '@constants';
 import { Button } from '@ui';
 import { DiscordSVG } from '@ui/svg';
 import Image from 'next/image';
@@ -8,7 +8,7 @@ import { type JSX } from 'react';
 import { HeaderNavigation } from './components/navigation';
 
 const navigation = [
-  { label: 'Contact us', url: contactUsUrl },
+  { label: 'Support', url: supportUrl },
   { label: 'Privacy', url: '#' },
   { label: 'Donate', url: donateUrl },
 ];

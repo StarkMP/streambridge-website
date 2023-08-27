@@ -1,3 +1,9 @@
+## 1.0.12
+
+- Add `privacy` page
+- Add `support` page
+- Refactor gradient styles
+
 ## 1.0.9
 
 - Update domain to www.streambridge.io

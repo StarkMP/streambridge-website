@@ -1,10 +1,8 @@
-'use client';
-
 import { chromeStoreUrl, copyrightYear, firefoxAddonUrl } from '@constants';
 import { DownloadButton, Header } from '@features';
 import type { DownloadButtonParams } from '@typings/features/download-button';
 import { ChromeSVG, EdgeSVG, FirefoxSVG } from '@ui/svg';
-import type { JSX } from 'react';
+import { NextPage } from 'next';
 
 const downloadButtons: DownloadButtonParams[] = [
   {
@@ -24,9 +22,9 @@ const downloadButtons: DownloadButtonParams[] = [
   },
 ];
 
-const Page = (): JSX.Element => {
+const HomePage: NextPage = () => {
   return (
-    <>
+    <div className='overflow-hidden w-screen h-screen bg-streambridge-gradient'>
       <div className='container relative h-screen mx-auto px-8 lg:px-0 flex flex-col justify-between'>
         <Header />
         <main className='animate-main-fade-out absolute left-[50%] top-[50%] flex flex-col justify-center items-center text-center w-full lg:px-0 px-8 gap-y-5 md:gap-y-8'>
@@ -48,8 +46,8 @@ const Page = (): JSX.Element => {
           Copyright © {copyrightYear} Stream Bridge. All Rights Reserved.
         </footer>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Page;
+export default HomePage;
