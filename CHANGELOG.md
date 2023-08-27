@@ -1,8 +1,9 @@
-## 1.0.12
+## 1.0.13
 
 - Add `privacy` page
 - Add `support` page
 - Refactor gradient styles
+- Add `next-link` type to `@ui/button``
 
 ## 1.0.9
 
